@@ -26,8 +26,8 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            brunofcosta/conversaotemperatura:latest
-            brunofcosta/conversaotemperatura:${{ github.run_number }}
+            brunofcosta/conversao-temperatura:latest
+            brunofcosta/conversao-temperatura:${{ github.run_number }}
   CD:
     needs: [CI]
     runs-on: ubuntu-latest
